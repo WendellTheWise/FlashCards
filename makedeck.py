@@ -2,6 +2,7 @@ import os
 
 def create_deck(name):
     exitdeck = False
+    counter = 0
     if os.path.exists(f"decks/{name}.md"):
         return "This Deck Name Is Already Taken"
     else:
@@ -13,6 +14,7 @@ def create_deck(name):
                 if question.lower() == "exit":
                     exitdeck = True
                     continue
+                counter += 1
                 answer = input("Please Enter The Answer To That Question: ")
-                f.write(f"{len(f.readlines())}|{question}|{answer}\n")
+                f.write(f"{counter}|{question}|{answer}\n")
 

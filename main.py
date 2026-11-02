@@ -30,14 +30,12 @@ while exit == False:
     elif number == True and request == 2:
         os.system('clear')
         deck = input("What Will Be The Name Of This Deck? ")
-        create_deck()
+        create_deck(deck)
         os.system('clear')
 
     elif number == True and request == 3:
         os.system('clear')
-        print(fetch_decks())
-        deck = input("Which Deck Would You Like To Edit? ")
-        edit_deck(deck)
+        edit_deck()
 
     elif number == True and request == 4:
         os.system('clear')
