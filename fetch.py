@@ -6,5 +6,3 @@ def fetch_decks():
         for line in f.read().splitlines():
             decklist.append(line)
     return "\n".join(decklist)
-
-print(fetch_decks())

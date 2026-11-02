@@ -1,5 +1,7 @@
 import random
 import os
+from fetch import *
+from makedeck import *
 number = True
 exit = False
 while exit == False:
@@ -27,6 +29,7 @@ while exit == False:
 
     elif number == True and request == 2:
         os.system('clear')
+        deck = input("What Will Be The Name Of This Deck? ")
         create_deck()
         os.system('clear')
 
